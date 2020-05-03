@@ -20,6 +20,27 @@ function login(e) {
 
 loginForm.addEventListener('submit', login);
 
+function addMessage(author, content) {
+  const message = document.createElement('li');
+  message.classList.add('message');
+  message.classList.add('message--received');
+  author === userName ? message.classList.add('message--self') : null;
+
+  const authorNode = document.createElement('h3');
+  authorNode.classList.add('message__author');
+  authorNode.innerHTML = author === userName ? 'You' : author;
+  message.appendChild(authorNode);
+
+  const contentNode = document.createElement('div');
+  contentNode.classList.add('message__content');
+  contentNode.innerHTML = content;
+  message.appendChild(contentNode);
+
+  messagesList.appendChild(message);
+
+  messageContentInput.value = null;
+}
+
 function sendMessage(e) {
   e.preventDefault();
   if (messageContentInput.value !== '') {

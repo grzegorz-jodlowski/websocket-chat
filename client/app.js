@@ -19,3 +19,14 @@ function login(e) {
 }
 
 loginForm.addEventListener('submit', login);
+
+function sendMessage(e) {
+  e.preventDefault();
+  if (messageContentInput.value !== '') {
+    addMessage(userName, messageContentInput.value);
+  } else {
+    alert('You should write your message');
+  }
+}
+
+addMessageForm.addEventListener('submit', sendMessage);

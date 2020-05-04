@@ -36,11 +36,14 @@ io.on('connection', (socket) => {
     console.log(`User ${socket.id} logged in`);
     users.push({ name: user, id: socket.id });
     console.log(users);
+    socket.broadcast.emit('message', { author: 'Chat Bot', content: `${user} has joined the conversation!` });
   });
 
   socket.on('disconnect', () => {
     console.log('Oh, socket ' + socket.id + ' has left');
-    users.splice(users.indexOf(users.find(user => user.id === socket.id)), 1);
+    const user = users.find(user => user.id === socket.id);
+    socket.broadcast.emit('message', { author: 'Chat Bot', content: `${user.name} has left the conversation... :(` });
+    users.splice(users.indexOf(user), 1);
     console.log(users);
   });
 

@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const socket = require('socket.io');
 
 const app = express();
 const port = 8000;
@@ -17,4 +18,6 @@ app.use(function (req, res, next) {
 });
 
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+const server = app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+
+const io = socket(server);

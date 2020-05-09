@@ -32,6 +32,7 @@ This is a w
 - JavaScript
 - GIT
 - Socket.io (WebSocket)
+- Express
 
 </br>
 

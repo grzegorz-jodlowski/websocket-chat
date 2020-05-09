@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
 });
 
 
-const server = app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+const server = app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
 
 const io = socket(server);
 

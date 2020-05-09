@@ -1,5 +1,5 @@
 <p align="center">
-<a href="#"><img src="./chat-websocket.gif" title="chat-websocket" alt="snippet of working chat in browser."></a>
+<a href="https://chat-websocket-app.herokuapp.com/"><img src="./chat-websocket.gif" title="chat-websocket" alt="snippet of working chat in browser."></a>
 </p>
 
 
@@ -104,7 +104,7 @@ yarn start
 
 
 ## <a name="site"></a>Website (on Heroku)
-[Chat.app](https://)
+[Chat.app](https://chat-websocket-app.herokuapp.com/)
 - if the page loads slowly, wait a moment, the server is waking up because it is hosted on a free platform Heroku.
 
 </br>

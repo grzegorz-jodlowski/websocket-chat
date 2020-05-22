@@ -22,7 +22,7 @@
 
 ## <a name="about"></a>What's this project about?
 
-This is a w
+This is a chat application based on WebSocket communication. It enables real-time communication with many participants. Additionally, it informs about joining or leaving the chat by a particular user.
 
 </br>
 
@@ -38,7 +38,21 @@ This is a w
 
 ## <a name="what"></a>What I learned?
 
-- create  [create](https://create-react-app.dev/),
+- differences between AJAX and WebSocket,
+  - AJAX:
+    - no permanent/continuous communication,
+    - communication with the server in the request–response system,
+    - only one party initiating contact (customer),
+  - WebSocket:
+    - continuous communication from beginning to end,
+    - server-client communication takes place by emitting and receiving events,
+    - communication initiated by both parties,
+    - real-time communication,
+- when is best to use WebSocket and AJAX,
+- WebSocket connection stages,
+- use the socket.io package to simplify using WebSocket,
+- set up the server as an intermediary between WebSocket clients,
+- send events to individual clients or to all but the sender,
 
 
 

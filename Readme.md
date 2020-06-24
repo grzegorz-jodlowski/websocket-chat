@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://chat-websocket-app.herokuapp.com/"><img src="./chat-websocket.gif" title="chat-websocket" alt="snippet of working chat in browser."></a>
+<a href="https://chat-websocket-app.herokuapp.com/"><img src="img/chat-websocket.gif" title="chat-websocket" alt="snippet of working chat in browser."></a>
 </p>
 
 
@@ -12,7 +12,7 @@
 ## Table of Contents
 
 - [What's this project about?](#about)
-- [Technologies used](#technologies)
+- [Technologies used](#tech)
 - [What I learned?](#what)
 - [Interesting code snippet](#interesting)
 - [Installation and quick start](#install)
@@ -26,7 +26,7 @@ This is a chat application based on WebSocket communication. It enables real-tim
 
 </br>
 
-## <a name="technologies"></a>Technologies used
+## <a name="tech"></a>Technologies used
 - HTML
 - CSS
 - JavaScript
